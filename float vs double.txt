@@ -1,0 +1,135 @@
+Q68 float vs double
+===================
+class Example{
+	public static void main(String args[]){
+		double d;
+		float f;
+		
+		f=0.123456789123456789f;
+		d=0.123456789123456789 ; //d or D
+		
+		System.out.println("float  : "+f);
+		System.out.println("double : "+d);
+
+		f=100.123456789123456789f;
+		d=100.123456789123456789 ; //d or D
+		
+		System.out.println("float  : "+f);
+		System.out.println("double : "+d);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q69 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		System.out.println("ch : "+ch);
+
+ 		ch=66; //ASCII B
+		System.out.println("ch : "+ch);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q70 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println("A"+"B");
+		System.out.println('A'+"B");
+		System.out.println('A'+'B');
+		System.out.println('A'+100);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q71 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		int x=65;
+		System.out.println(x+ch);
+		System.out.println(ch+1);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q72 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println(2147483647); //Legal ->max of int(32bits)
+		System.out.println(-2147483648); //Legal->min of int
+
+		System.out.println(2147483648); //Illegal
+		System.out.println(-2147483649); //Illegal
+
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q73
+class Example{
+	public static void main(String args[]){
+		System.out.println(2147483647); //Legal
+		System.out.println(-2147483648); //Legal
+
+		System.out.println(2147483648L); //Legal ->L or l long
+		System.out.println(-2147483649L); //Legal
+
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q74
+class Example{
+	public static void main(String args[]){
+		long x;
+		x=2147483647; //Legal -> max of int
+		System.out.println(x);
+
+		//x=2147483648; //Illegal -> max  of int +1
+		x=2147483648L; //Legal
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q75
+class Example{
+	public static void main(String args[]){
+		System.out.println(1213.12122);
+		System.out.println(0.00000122);
+		System.out.println(1.22E-6);
+		System.out.println(-0.00000122);
+		System.out.println(1.22E6);
+		System.out.println(-1.22E-6);
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q76 float(32bits) vs double (64bits)
+====================================
+class Example{
+	public static void main(String args[]){
+		System.out.println(1213.12122f); //32bits
+		System.out.println(1213.12122); //64bits
+
+		float f;
+		f=1213.12122f; //Legal
+		
+		f=1213.12122; //Illegal
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q77
+class Example{
+	public static void main(String args[]){
+		System.out.println('A'); 
+		System.out.println('2'); 
+		System.out.println(5+5); 
+		System.out.println('5'+5); 
+		System.out.println('5'+'5'); 
+		System.out.println("5"+5); 
+		System.out.println("5"+'5'); 
+	}

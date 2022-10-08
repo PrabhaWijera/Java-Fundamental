@@ -1,0 +1,1204 @@
+Q1  =================Step I=====================
+~/GDSE47 :/> gedit Example.java &
+//------------------------------------Example.java-------------------------
+class Example{
+	public static void main(String args[]){
+		System.out.println("Hello Java");
+	}
+}
+//-------------------------------------------------------------------------
+
+=================Step II====================
+~/GDSE47 :/> javac Example.java
+
+=================Step III===================
+~/GDSE47 :/> java Example
+Hello Java
+
+/////////////////////////////////////////////////////////////////////////////////////////
+Q2 Case I
+=========
+~/GDSE47 :/> gedit Exampal.java
+//-----------------------------------Exampal.java----------------------
+
+//---------------------------------------------------------------------
+
+~/GDSE47 :/> javac Example.java
+javac: file not found: Example.java
+Usage: javac <options> <source files>
+use -help for a list of possible options
+
+
+//////////////////////////////////////////////////////////////////////////////////
+Q3 Case II
+==========
+~/GDSE47 :/> gedit Example.java &
+//-------------------------------------Example.java---------------------------
+class example{
+	public static void main(String args[]){
+		System.out.println("Hello Java");
+	}
+}
+//--------------------------------------------------------------------------
+
+~/GDSE47 :/> javac Example.java
+
+~/GDSE47 :/> java Example
+Error: Could not find or load main class Example
+
+
+~/GDSE47 :/> java example
+Hello Java
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q4 Case III
+===========
+~/GDSE47 :/> java Example.class
+Error: Could not find or load main class Example.class
+
+~/GDSE47 :/> java Example
+Hello Java
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q5
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q6
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q7
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q8
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q9
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q10
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q11
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q12
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q13
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q14
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q15
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q16
+
+//////////////////////////////////////////////////////////////////////////////////////////
+       System.out.println(data)
+//////////////////////////////////////////////////////////////////////////////////////////
+Q17
+class Example{
+	public static void main(String args[]){
+		System.out.println("Hello Java");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q18
+class Example{
+	public static void main(String args[]){
+		System.out.println("A");
+		System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
+		System.out.println("E");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+    Simple data (Java Literals)
+    1. Integer Literals ==>100,2334, -1234
+    2. Floating-point  ===>0.1234, 1.233, 1.2E3
+    3. Character Literals=> 'A', '3', '%'
+    4. Boolean Literals ==> true, false
+    5. String Literals====> "A", "Niroth"
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q19
+class Example{
+	public static void main(String args[]){
+		System.out.println(1234);
+		System.out.println(-1234);
+		System.out.println(0.123);
+		System.out.println(-1.234);
+		System.out.println('A');
+		System.out.println('7');
+		System.out.println(true);
+		System.out.println(false);
+		System.out.println("A");
+		System.out.println("Niroth");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+    Java Comments
+//////////////////////////////////////////////////////////////////////////////////////////
+Q20 Line Commnets 
+=================
+class Example{
+	public static void main(String args[]){
+		System.out.println("A");
+		//System.out.println("B");
+		System.out.println("C");
+		//System.out.println("D");
+		System.out.println("E");
+		//System.out.println("F");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q21 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		System.out.println("A"); //Prints  A
+		System.out.println("B"); //Prints  B
+		System.out.println("C"); //Prints  C
+		System.out.println("D");
+		System.out.println("E");
+		System.out.println("F");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q22 Block Comments
+==================
+class Example{
+	public static void main(String args[]){
+		System.out.println("A");
+		/*System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
+		System.out.println("E");*/
+		System.out.println("F");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+    System.out.print(data)
+//////////////////////////////////////////////////////////////////////////////////////////
+Q23
+class Example{
+	public static void main(String args[]){
+		System.out.print("A");
+		System.out.print("B");
+		System.out.println("C");
+		System.out.println("D");
+		System.out.print("E");
+		System.out.println("F");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q24 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println("abc);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q25 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println('A');	
+		System.out.println('7');	
+		System.out.println('AB');
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q26 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println("ABC");	
+		System.out.println("abc");	
+		System.out.println('abc');	//Illegal
+	} 
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q27 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println(100);	
+		System.out.println(1.23);	
+		System.out.println(1.234.40);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q28 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println(true);	
+		System.out.println(false);	
+		System.out.println(True);
+		System.out.println(falsE);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+    Computer Variables
+//////////////////////////////////////////////////////////////////////////////////////////
+Q29
+class Example{
+	public static void main(String args[]){
+		int x; //Create a (Memory space)Variable==>Variable declaration
+		x=100; //assign 100 to x
+		System.out.println(x); //print value of x
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q30 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x;
+		x=100;
+		System.out.println('x'); //prints x
+		System.out.println("x"); //prints x
+		System.out.println(x); //prints 100
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q31 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x;
+		//x=100;
+		System.out.println(x); //Illegal, initialization error
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q32 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x;
+		System.out.println(x);
+		x=100;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q33 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x;
+		x=100;
+		x=200;
+		System.out.println(x);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q34 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x;
+		x=100;
+		System.out.println(x);
+		x=200;
+		System.out.println(x);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q35 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x=100; //Legal
+		System.out.println(x); //print 100
+		x=200;
+		System.out.println(x); //prints 200
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q36 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x=100; //Legal
+		System.out.println(x); //print 100
+		int y=200;
+		System.out.println(y); //prints 200
+		int z=300;
+		System.out.println(z); //prints 300
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q37 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x,y,z;
+		x=100;
+		y=200;
+		z=300;
+		System.out.println(x); //print 100
+		System.out.println(y); //prints 200
+		System.out.println(z); //prints 300
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q38 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x=100,y,z=300; //Legal
+		y=200;
+		System.out.println(x); //print 100
+		System.out.println(y); //prints 200
+		System.out.println(z); //prints 300
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q39 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x,y,z;
+		x=y=z=200;
+		System.out.println(x); //print 200
+		System.out.println(y); //prints 200
+		System.out.println(z); //prints 200
+
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q40 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x=y=z=200; //Illegal
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q41 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		int x=100,y,z=300;
+		y=200;
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		int y=400;
+		System.out.println(y);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q42 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x=100,z=300;
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		int y=400;
+		System.out.println(y);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q43 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x=100,y=200;
+		
+		System.out.println(x);
+		System.out.println(y);
+		x=y; //?
+		System.out.println(x); //prints 200
+		System.out.println(y); //prints 200
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q44 Exerxcie
+============
+class Example{
+	public static void main(String args[]){
+		int x=100,y=200;
+		int z;
+		z=x+y;		
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q45 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x=100;
+		final int y=200;
+		System.out.println(x);
+		System.out.println(y);
+		
+		x=101;
+		y=201;
+		System.out.println(x);
+		System.out.println(y);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q47
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		int a,b,c;
+		a=input.nextInt();
+		b=input.nextInt();
+		c=a+b;
+		System.out.println(a+" + "+b+" = "+c);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q48
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		int a,b,c;
+		System.out.print("Input number 1 : ");
+		a=input.nextInt();
+		System.out.print("Input number 2 : ");
+		b=input.nextInt();
+		c=a+b;
+		System.out.println(a+" + "+b+" = "+c);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q49
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+		
+		System.out.println("Your age is : "+age);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q50 Exercise
+============
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+		System.out.println("Your current age : "+age);
+		//
+		//
+		//
+		System.out.println("Your age after 10 years : "+age);
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q51 From Q50
+=============
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+		System.out.println("Your current age : "+age);
+		//
+		int newAge;
+		newAge=age+10;
+		age=newAge;
+		//
+		System.out.println("Your age after 10 years : "+age);
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q52 Exercise
+============
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input number 1 : ");
+		int a=input.nextInt();
+		System.out.print("Input number 2 : ");
+		int b=input.nextInt();
+		System.out.println(a+" "+b);
+		//	
+		//
+		//
+		System.out.println(a+" "+b);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q53 From Q52
+============
+
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input number 1 : ");
+		int a=input.nextInt();
+		System.out.print("Input number 2 : ");
+		int b=input.nextInt();
+		System.out.println(a+" "+b);
+		//	
+		int c=a;
+		a=b;
+		b=c;
+		//
+		System.out.println(a+" "+b);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+            Java Literals
+//////////////////////////////////////////////////////////////////////////////////////////
+Q54 Integer Literals
+=====================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(12345); //Decimal
+		System.out.println(-12345);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q55 Binary Literals
+====================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(1100100); //Decimal
+		System.out.println(0B1100100); //Binary-->100
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q56
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(1000); 
+		System.out.println(1000); 
+		//System.out.println(0B2000);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q57 Octal Literals
+==================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(144);  //prints 144, Decimal
+		System.out.println(0144);  //prints 100, Octal
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q58
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(148);  
+		System.out.println(0148);//Illegal
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q59  Hexadecimal
+================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(64);  	//prints 64. 
+		System.out.println(0X64);	//Prints 100, Hex
+		System.out.println(0X1A);	//Prints 26
+		System.out.println(0X1a);	//Prints 26
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q60 Floating-point Literals
+===========================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(1.2345);
+		System.out.println(123000.0);
+		System.out.println(1.23E5);
+		System.out.println(1.23E-5);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q61 Character Literals
+======================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println('A');	//Character Literals
+		System.out.println('&'); 	//Character Literals
+		System.out.println('7');	//Character Literals
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q62 Escape Characters
+======================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		char ch;
+		ch='\b';
+		System.out.println("AB"+ch+"CD");
+		ch='\t';
+		System.out.println("AB"+ch+"CD");
+		ch='\n';
+		System.out.println("AB"+ch+"CD");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q63
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println("\\");
+		System.out.println('\\');
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q64
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		//System.out.println(""");  //Illegal
+		System.out.println("\"");
+		
+		//System.out.println('''); //Illegal
+		System.out.println('\''); //Legal
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q65
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		//System.out.println("AB"CD"); //output-->AB"CD
+		System.out.println("AB\"CD"); //output-->AB"CD
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q66
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		char ch;
+		ch='A'; //Legal
+		//ch='\'; //Illegal
+		ch='\\';
+		
+		//ch='''; //Illegal
+		ch='\'';
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q67 Unicode Character Literals
+==============================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		char ch;
+		ch='A';
+		System.out.println(ch); //prints A
+		
+		ch=65;
+		System.out.println(ch); //prints A
+		
+		ch='\u0041';
+		System.out.println(ch); //prints A
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q68 float vs double
+===================
+class Example{
+	public static void main(String args[]){
+		double d;
+		float f;
+		
+		f=0.123456789123456789f;
+		d=0.123456789123456789 ; //d or D
+		
+		System.out.println("float  : "+f);
+		System.out.println("double : "+d);
+
+		f=100.123456789123456789f;
+		d=100.123456789123456789 ; //d or D
+		
+		System.out.println("float  : "+f);
+		System.out.println("double : "+d);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q69 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		System.out.println("ch : "+ch);
+
+ 		ch=66; //ASCII B
+		System.out.println("ch : "+ch);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q70 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println("A"+"B");
+		System.out.println('A'+"B");
+		System.out.println('A'+'B');
+		System.out.println('A'+100);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q71 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		int x=65;
+		System.out.println(x+ch);
+		System.out.println(ch+1);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q72 Exercise
+============
+class Example{
+	public static void main(String args[]){
+		System.out.println(2147483647); //Legal ->max of int(32bits)
+		System.out.println(-2147483648); //Legal->min of int
+
+		System.out.println(2147483648); //Illegal
+		System.out.println(-2147483649); //Illegal
+
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q73
+class Example{
+	public static void main(String args[]){
+		System.out.println(2147483647); //Legal
+		System.out.println(-2147483648); //Legal
+
+		System.out.println(2147483648L); //Legal ->L or l long
+		System.out.println(-2147483649L); //Legal
+
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q74
+class Example{
+	public static void main(String args[]){
+		long x;
+		x=2147483647; //Legal -> max of int
+		System.out.println(x);
+
+		//x=2147483648; //Illegal -> max  of int +1
+		x=2147483648L; //Legal
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q75
+class Example{
+	public static void main(String args[]){
+		System.out.println(1213.12122);
+		System.out.println(0.00000122);
+		System.out.println(1.22E-6);
+		System.out.println(-0.00000122);
+		System.out.println(1.22E6);
+		System.out.println(-1.22E-6);
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q76 float(32bits) vs double (64bits)
+====================================
+class Example{
+	public static void main(String args[]){
+		System.out.println(1213.12122f); //32bits
+		System.out.println(1213.12122); //64bits
+
+		float f;
+		f=1213.12122f; //Legal
+		
+		f=1213.12122; //Illegal
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q77
+class Example{
+	public static void main(String args[]){
+		System.out.println('A'); 
+		System.out.println('2'); 
+		System.out.println(5+5); 
+		System.out.println('5'+5); 
+		System.out.println('5'+'5'); 
+		System.out.println("5"+5); 
+		System.out.println("5"+'5'); 
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+    Conversion and Casting
+//////////////////////////////////////////////////////////////////////////////////////////
+Q78
+  Conversion and Casting
+//////////////////////////////////////////////////////////////////////////////////////////
+Q78
+class Example{
+	public static void main(String[] args){
+		byte b=100;
+		short s;
+		s=b; //Legal Conversion (Wider conversion)
+		System.out.println(b+" "+s); //100 100
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q79
+class Example{
+	public static void main(String[] args){
+		short s=100;
+		byte b;
+		//b=s; //Illegal
+		b=(byte)s; //Legal, Castig (Narrow Casting)
+		System.out.println(b+" "+s); //100 100
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q80 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=10;
+		short s=12;
+		int x=10;
+		long y=10;
+		float f=1.5f;
+		double d=12.22;
+		
+		s=b;
+		x=s;
+		y=x;
+		f=y;
+		d=f;
+		
+		b=s;
+		s=x;
+		x=y;
+		y=f;
+		f=d;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q81 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x=100;
+		double d;
+		d=x; 
+		System.out.println(x+" "+d); //100 100.0
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q82 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		int x;
+		x=ch;
+		System.out.println(ch+" "+x);
+		
+		double d='a';
+		System.out.println(d); //97.0
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q83 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x=1;
+		boolean b;
+		b=x; //Illegal
+
+		b=true;
+		x=b; //Illegal
+		System.out.println();
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q84 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=100;
+		short s;
+		s=b; 	//Legal Automatic Conversion
+
+		int x;
+		x=b;	//Legal Automatic Conversion
+
+		long y;
+		y=b;	//Legal Automatic Conversion
+
+		float f;
+		f=b;	//Legal Automatic Conversion	
+
+		double d;
+		d=b;	//Legal Automatic Conversion
+
+		char ch;
+		//ch=b;	//Illegal ->Need to cast
+		ch=(char)b; //Legal	
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q85  Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=65;
+		short s=66;
+		char ch;
+		ch=b; //Illegal
+		ch=s; //Illegal
+		ch=66; //Legal
+		System.out.println(ch); //prints B
+	}
+} 
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q86 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		double d=97.2323;
+		int x;
+		x=(int)d;
+		System.out.println(x+" : "+d); //97 : 97.2323
+
+		char ch;
+		ch=(char)d;
+		System.out.println(ch+" : "+d); //a : 97.2323
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q87 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		short s=100;
+		byte b;
+		b=(byte)s;
+		System.out.println(b+" : "+s); 
+
+		s=127;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //127 127
+
+		s=128;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //-128 127
+
+		s=255;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //-1 127
+
+		s=256;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //0 127
+
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q88
+class Example{
+	public static void main(String args[]){
+		int x=Integer.MAX_VALUE;
+		byte b;
+		b=(byte)x;
+		System.out.println(b+" "+x);
+	}
+}	
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q89 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b1=1,b2=2;
+		byte b3;
+		b3=b1+b2; //Illegal
+		b1=b1+10; //Illegal 
+		System.out.println();
+		
+		short s;
+		s=b1+b2; //Illegal
+		s1=b1+10; //Illegal
+		
+		int x;
+		x=b1+b2; //Legal
+		x=b1+10; //Legal
+	}
+}		
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q90 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=10;
+		long x=120000;
+		
+		//Insert Code here
+		System.out.println(x+" : "+b);
+
+	}
+}
+//A.	b=x;
+//B.	x=b;
+//C.	x=x+b;
+//D.	b=b+x;
+//E.	b=(byte)b+x;
+//F.	b=(byte)(b+x);
+//G.	b=b+(byte)x;
+//////////////////////////////////////////////////////////////////////////////////////////
+Q79
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q80
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q81
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q82
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q83
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q84
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q85
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q86
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q87
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q88
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q89
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q90
+
+
+
+

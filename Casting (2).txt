@@ -1,0 +1,235 @@
+  Conversion and Casting
+//////////////////////////////////////////////////////////////////////////////////////////
+Q78
+  Conversion and Casting
+//////////////////////////////////////////////////////////////////////////////////////////
+Q78
+class Example{
+	public static void main(String[] args){
+		byte b=100;
+		short s;
+		s=b; //Legal Conversion (Wider conversion)
+		System.out.println(b+" "+s); //100 100
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q79
+class Example{
+	public static void main(String[] args){
+		short s=100;
+		byte b;
+		//b=s; //Illegal
+		b=(byte)s; //Legal, Castig (Narrow Casting)
+		System.out.println(b+" "+s); //100 100
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////
+Q80 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=10;
+		short s=12;
+		int x=10;
+		long y=10;
+		float f=1.5f;
+		double d=12.22;
+		
+		s=b;
+		x=s;
+		y=x;
+		f=y;
+		d=f;
+		
+		b=s;
+		s=x;
+		x=y;
+		y=f;
+		f=d;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q81 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x=100;
+		double d;
+		d=x; 
+		System.out.println(x+" "+d); //100 100.0
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q82 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		char ch='A';
+		int x;
+		x=ch;
+		System.out.println(ch+" "+x);
+		
+		double d='a';
+		System.out.println(d); //97.0
+	}
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q83 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		int x=1;
+		boolean b;
+		b=x; //Illegal
+
+		b=true;
+		x=b; //Illegal
+		System.out.println();
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q84 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=100;
+		short s;
+		s=b; 	//Legal Automatic Conversion
+
+		int x;
+		x=b;	//Legal Automatic Conversion
+
+		long y;
+		y=b;	//Legal Automatic Conversion
+
+		float f;
+		f=b;	//Legal Automatic Conversion	
+
+		double d;
+		d=b;	//Legal Automatic Conversion
+
+		char ch;
+		//ch=b;	//Illegal ->Need to cast
+		ch=(char)b; //Legal	
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q85  Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=65;
+		short s=66;
+		char ch;
+		ch=b; //Illegal
+		ch=s; //Illegal
+		ch=66; //Legal
+		System.out.println(ch); //prints B
+	}
+} 
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q86 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		double d=97.2323;
+		int x;
+		x=(int)d;
+		System.out.println(x+" : "+d); //97 : 97.2323
+
+		char ch;
+		ch=(char)d;
+		System.out.println(ch+" : "+d); //a : 97.2323
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q87 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		short s=100;
+		byte b;
+		b=(byte)s;
+		System.out.println(b+" : "+s); 
+
+		s=127;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //127 127
+
+		s=128;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //-128 127
+
+		s=255;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //-1 127
+
+		s=256;
+		b=(byte)s;
+		System.out.println(b+" : "+s);  //0 127
+
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q88
+class Example{
+	public static void main(String args[]){
+		int x=Integer.MAX_VALUE;
+		byte b;
+		b=(byte)x;
+		System.out.println(b+" "+x);
+	}
+}	
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q89 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b1=1,b2=2;
+		byte b3;
+		b3=b1+b2; //Illegal
+		b1=b1+10; //Illegal 
+		System.out.println();
+		
+		short s;
+		s=b1+b2; //Illegal
+		s1=b1+10; //Illegal
+		
+		int x;
+		x=b1+b2; //Legal
+		x=b1+10; //Legal
+	}
+}		
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q90 Exercise
+=============
+class Example{
+	public static void main(String args[]){
+		byte b=10;
+		long x=120000;
+		
+		//Insert Code here
+		System.out.println(x+" : "+b);
+
+	}
+}
+//A.	b=x;
+//B.	x=b;
+//C.	x=x+b;
+//D.	b=b+x;
+//E.	b=(byte)b+x;
+//F.	b=(byte)(b+x);
+//G.	b=b+(byte)x;

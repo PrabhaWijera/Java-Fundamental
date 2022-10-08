@@ -1,0 +1,316 @@
+Q47
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		int a,b,c;
+		a=input.nextInt();
+		b=input.nextInt();
+		c=a+b;
+		System.out.println(a+" + "+b+" = "+c);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q48
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		int a,b,c;
+		System.out.print("Input number 1 : ");
+		a=input.nextInt();
+		System.out.print("Input number 2 : ");
+		b=input.nextInt();
+		c=a+b;
+		System.out.println(a+" + "+b+" = "+c);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q49
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+		
+		System.out.println("Your age is : "+age);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q50 Exercise
+============
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+		System.out.println("Your current age : "+age);
+		//
+		//
+		//
+		System.out.println("Your age after 10 years : "+age);
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q51 From Q50
+=============
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input your age : ");
+		int age=input.nextInt();
+		System.out.println("Your current age : "+age);
+		//
+		int newAge;
+		newAge=age+10;
+		age=newAge;
+		//
+		System.out.println("Your age after 10 years : "+age);
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q52 Exercise
+============
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input number 1 : ");
+		int a=input.nextInt();
+		System.out.print("Input number 2 : ");
+		int b=input.nextInt();
+		System.out.println(a+" "+b);
+		//	
+		//
+		//
+		System.out.println(a+" "+b);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q53 From Q52
+============
+
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		Scanner input=new Scanner(System.in); 
+		
+		System.out.print("Input number 1 : ");
+		int a=input.nextInt();
+		System.out.print("Input number 2 : ");
+		int b=input.nextInt();
+		System.out.println(a+" "+b);
+		//	
+		int c=a;
+		a=b;
+		b=c;
+		//
+		System.out.println(a+" "+b);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+            Java Literals
+//////////////////////////////////////////////////////////////////////////////////////////
+Q54 Integer Literals
+=====================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(12345); //Decimal
+		System.out.println(-12345);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q55 Binary Literals
+====================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(1100100); //Decimal
+		System.out.println(0B1100100); //Binary-->100
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q56
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(1000); 
+		System.out.println(1000); 
+		//System.out.println(0B2000);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q57 Octal Literals
+==================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(144);  //prints 144, Decimal
+		System.out.println(0144);  //prints 100, Octal
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q58
+
+
+
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(148);  
+		System.out.println(0148);//Illegal
+		
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q59  Hexadecimal
+================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(64);  	//prints 64. 
+		System.out.println(0X64);	//Prints 100, Hex
+		System.out.println(0X1A);	//Prints 26
+		System.out.println(0X1a);	//Prints 26
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q60 Floating-point Literals
+===========================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println(1.2345);
+		System.out.println(123000.0);
+		System.out.println(1.23E5);
+		System.out.println(1.23E-5);
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q61 Character Literals
+======================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println('A');	//Character Literals
+		System.out.println('&'); 	//Character Literals
+		System.out.println('7');	//Character Literals
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q62 Escape Characters
+======================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		char ch;
+		ch='\b';
+		System.out.println("AB"+ch+"CD");
+		ch='\t';
+		System.out.println("AB"+ch+"CD");
+		ch='\n';
+		System.out.println("AB"+ch+"CD");
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q63
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		System.out.println("\\");
+		System.out.println('\\');
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q64
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		//System.out.println(""");  //Illegal
+		System.out.println("\"");
+		
+		//System.out.println('''); //Illegal
+		System.out.println('\''); //Legal
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q65
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		//System.out.println("AB"CD"); //output-->AB"CD
+		System.out.println("AB\"CD"); //output-->AB"CD
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q66
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		char ch;
+		ch='A'; //Legal
+		//ch='\'; //Illegal
+		ch='\\';
+		
+		//ch='''; //Illegal
+		ch='\'';
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q67 Unicode Character Literals
+==============================
+import java.util.*;
+class Example{	
+	public static void main(String asrgs[]){
+		char ch;
+		ch='A';
+		System.out.println(ch); //prints A
+		
+		ch=65;
+		System.out.println(ch); //prints A
+		
+		ch='\u0041';
+		System.out.println(ch); //prints A
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q68
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q69
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Q70
